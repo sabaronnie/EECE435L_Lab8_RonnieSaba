@@ -1,0 +1,32 @@
+services:
+  hello_world:
+    profiles: [hello]
+    image: flask_docker:latest
+    build: ./hello_world
+    ports:
+      - "127.0.0.1:5001:5000"
+
+  lab5_api:
+    image: rws24/lab8-ronnie_saba:0.0.1-RELEASE
+    build:
+      context: ..
+      dockerfile: Lab8/Activities/Dockerfile
+      target: lab5
+    ports:
+      - "127.0.0.1:5052:5000"
+    volumes:
+      - users_data:/data
+
+  names_api:
+    image: rws24/lab8-ronnie_saba:0.0.2-RELEASE
+    build:
+      context: ..
+      dockerfile: Lab8/Activities/Dockerfile
+      target: names
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - users_data:/data
+
+volumes:
+  users_data:

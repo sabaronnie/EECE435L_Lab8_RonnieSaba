@@ -1,0 +1,38 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments and local environment settings
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Generated local database storage
+/database.db
+/Activities/database.db
+/Activities/data/
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs and temporary editor files
+*.log
+*.swp
+*.swo
+*~
+.idea/
+
+# Operating system files and Microsoft Office lock files
+.DS_Store
+Thumbs.db
+~$*

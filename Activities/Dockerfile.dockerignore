@@ -1,0 +1,11 @@
+# Paths are relative to the parent folder used as the build context.
+**
+!Lab5/
+!Lab5/app.py
+!Lab5/database.py
+!Lab5/database.db
+!Lab5/requirements.txt
+!Lab8/
+!Lab8/Activities/
+!Lab8/Activities/run_lab5.py
+!Lab8/Activities/names_app.py
